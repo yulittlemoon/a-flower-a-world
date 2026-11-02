@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Petal Material Lab</title>
+    <style>
+      html, body { margin: 0; height: 100%; background: #06123f; overflow: hidden; }
+      #lab { position: fixed; inset: 0; }
+      .labels {
+        position: fixed; left: 0; right: 0; bottom: 28px;
+        display: grid; grid-template-columns: repeat(4, 1fr);
+        pointer-events: none;
+        font: 500 14px/1.5 "PingFang SC", system-ui, sans-serif;
+        color: #f3e6c4; text-align: center; letter-spacing: 0.08em;
+        text-shadow: 0 0 12px rgba(255, 214, 140, 0.55);
+      }
+      .labels small { display: block; color: #b9c6ee; font-weight: 400; letter-spacing: 0.02em; text-shadow: none; }
+    </style>
+  </head>
+  <body>
+    <main id="lab"></main>
+    <div class="labels" data-lab-labels></div>
+    <script type="module" src="/src/lab/petal-lab.ts"></script>
+  </body>
+</html>
